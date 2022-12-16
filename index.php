@@ -21,6 +21,11 @@
   <title>Document</title>
 </head>
 <body>
+
+  <?php
+    include $_SERVER['DOCUMENT_ROOT'].'/php_lecture/include/header.php';
+  ?>
+
   <button class="login" onclick="goLogin()">login</button>
   <button class="logout" onclick="goLogout()">logout</button>
 
@@ -50,5 +55,9 @@
       location.href='/php_lecture/php/logout.php';
     }
   </script>
+<?php
+    include $_SERVER['DOCUMENT_ROOT'].'/php_lecture/include/footer.php';
+  ?>
+  
 </body>
 </html>
